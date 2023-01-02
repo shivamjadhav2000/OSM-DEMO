@@ -1,6 +1,10 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import HomeView from "../views/HomeView.vue";
+import MarkerView from "../views/MarkerView.vue";
+import GeoSearchView from "../views/GeoSearchView.vue";
+import PolylineView from "../views/PolylineView.vue";
+import GeofenceView from "../views/GeofenceView.vue";
 
 Vue.use(VueRouter);
 
@@ -13,11 +17,22 @@ const routes = [
   {
     path: "/about",
     name: "about",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
+    component: MarkerView,
+  },
+  {
+    path: "/GeoSearch",
+    name: "GeoSearch",
+    component: GeoSearchView,
+  },
+  {
+    path: "/Polyline",
+    name: "Polyline",
+    component: PolylineView,
+  },
+  {
+    path: "/Geofence",
+    name: "Geofence",
+    component: GeofenceView,
   },
 ];
 

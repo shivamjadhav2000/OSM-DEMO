@@ -1,18 +1,23 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <OSMMap />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import OSMMap from "@/components/OSMMap.vue";
 
 export default {
   name: "HomeView",
   components: {
-    HelloWorld,
+    OSMMap,
   },
 };
 </script>
+<style>
+.home {
+  display: flex;
+  justify-content: center;
+}
+</style>
