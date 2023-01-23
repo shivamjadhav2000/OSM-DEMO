@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "sh deploy.sh"
   },
   "dependencies": {
     "core-js": "^3.8.3",
@@ -15,6 +16,7 @@
     "vue-router": "^3.5.1",
     "vue2-leaflet": "^2.7.1",
     "vue2-leaflet-geosearch": "^1.0.6",
+    "vue2-leaflet-movingmarker": "^1.1.0",
     "vuex": "^3.6.2"
   },
   "devDependencies": {
