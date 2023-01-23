@@ -6,5 +6,5 @@
 # echo 'www.example.com' > CNAME
 git initgit add -A
 git commit -m 'deploy'
-git push -f git@github.com:shivamjadhav2000/OSM-DEMO.git master:gh-pages
+git push -f git@github.com:shivamjadhav2000/OSM-DEMO.git main:gh-pages
 cd -
