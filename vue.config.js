@@ -3,3 +3,7 @@ module.exports = defineConfig({
   transpileDependencies: true,
   publicPath: "/osm-demo/",
 });
+
+module.exports = {
+  outputDir: 'dist',
+};
