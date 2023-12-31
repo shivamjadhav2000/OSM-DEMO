@@ -1,9 +1,12 @@
 const { defineConfig } = require("@vue/cli-service");
 module.exports = defineConfig({
-  transpileDependencies: true,
-  publicPath: "/osm-demo/",
+  base: "/OSM-DEMO/",
+  plugins: [],
+  resolve: {
+    alias: [],
+  },
 });
 
 module.exports = {
-  outputDir: 'dist',
+  outputDir: "dist",
 };
